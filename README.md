@@ -1,77 +1,82 @@
-Team Management
-This is the repository for the Team Management, an internship assignment that includes a React frontend and a Node.js backend. Follow the instructions below to set up the project locally.
+# Team Management Application
 
-Prerequisites
-Before you begin, ensure you have the following installed on your system:
+This repository contains the Team Management Application, an internship project featuring a React frontend and a Node.js backend. Follow the instructions below to set up the project on your local machine.
 
-Node.js (LTS version recommended)
-npm (comes with Node.js)
-A MongoDB database (local or remote)
-Setup Instructions
-Clone the Repository
-First, clone the repository to your local machine:
+### Prerequisites
+Before starting, ensure you have the following installed:
 
-bash
-Copy code
-git clone https://github.com/your-username/your-project-name.git
+- Node.js (LTS version recommended)
+- npm (comes with Node.js)
+- MongoDB database (either local or remote)
+## Setup Instructions
+1. Clone the project to your local machine using Git:
+
+```
+https://github.com/Cypher-aman/heliverse_task.git
 cd your-project-name
-Server Setup
+```
+2. Server Setup
 Navigate to the server directory:
 
-bash
-Copy code
+```
 cd server
-Install dependencies:
+```
+Use code with caution.
+Install project dependencies:
 
-bash
-Copy code
+```
 npm install
-Create a .env file in the server directory and add the following environment variables:
+```
+Use code with caution.
+Set up environment variables:
 
-plaintext
-Copy code
+3. Create a file named .env in the server directory.
+Add the following content to the .env file, replacing your_mongodb_connection_string with your actual MongoDB connection string:
+```
 PORT=8000
-DB_URL=[Your DB URL]
-Replace [Your DB URL] with the name of your local or remote MongoDB database.
-
+DB_URL=your_mongodb_connection_string
+```
 Start the server:
 
-bash
-Copy code
-npm start
-The server will start running on http://localhost:8000.
+```
+npm run dev
+```
+Use code with caution.
+The server will now be running on http://localhost:8000.
 
-Client Setup
-Open a new terminal and navigate to the client directory from the root of the project:
+4. Client Setup
+Navigate to the client directory:
 
-bash
-Copy code
+```
 cd client
-Install dependencies:
+```
+Install project dependencies:
 
-bash
-Copy code
+```
 npm install
-Create a .env file in the client directory and add the following environment variable:
+```
+Use code with caution.
+Configure environment variables:
 
-plaintext
-Copy code
+Create a file named .env in the client directory.
+Add the following content to the .env file:
+```
 VITE_BASE_API_URL=http://localhost:8000
-This will set the base URL for your API requests to the server.
-
+```
 Start the client development server:
 
-bash
-Copy code
+```
 npm run dev
-This will launch the React application on http://localhost:5173.
+```
+Use code with caution.
+Access the client application at http://localhost:5173.
 
 Using the Application
-After starting both the server and the client, you can access the React application through your web browser at http://localhost:3000. Make sure the server is running simultaneously to handle API requests.
 
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests to us.
+With both the server and client running, open your browser and go to http://localhost:5173 to start using the application. Ensure the server is running at http://localhost:8000 to handle API requests from the client.
+## Acknowledgements
 
-License
-This project is licensed under the [License Name] - see the LICENSE.md file for details.
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
